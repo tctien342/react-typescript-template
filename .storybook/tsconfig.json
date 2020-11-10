@@ -1,0 +1,36 @@
+{
+    "extends": "../tsconfig.extend.json",
+    "compilerOptions": {
+        "rootDir": "../",
+        "target": "ESNext",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "jsx": "react",
+        "isolatedModules": true
+    },
+    "include": ["src/**/*"],
+    "exclude": [
+        "node_modules",
+        "build",
+        "dist",
+        "scripts",
+        "acceptance-tests",
+        "webpack",
+        "jest",
+        "src/setupTests.ts",
+        "**/*/*.test.ts",
+        "examples",
+        "src/assets/svgc"
+    ]
+}
